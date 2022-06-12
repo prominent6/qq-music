@@ -1,0 +1,206 @@
+.header_down {
+    width: 1200px;
+    height: 52px;
+}
+
+.header_down ul {
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header_down ul li {
+    line-height: 52px;
+    margin: 0 25px;
+}
+
+.header_down ul li a {
+    color: #000;
+    font-size: 15px;
+}
+
+
+/* <!-- header end --> */
+
+
+/* main start */
+
+.main {
+    height: 532px;
+    position: relative;
+    background: url(../image/bgc.jpg) 50% 0 repeat-x;
+}
+
+
+/* 设置轮播图箭头 */
+
+#angleLeft {
+    position: absolute;
+    width: 79px;
+    height: 108px;
+    line-height: 108px;
+    z-index: 9998;
+    top: 50%;
+    margin-top: -54px;
+    background-color: #0000000D;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#angleRight {
+    position: absolute;
+    right: 0;
+    width: 79px;
+    height: 108px;
+    line-height: 108px;
+    z-index: 9998;
+    top: 50%;
+    margin-top: -54px;
+    background-color: #0000000D;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#angleLeft:hover,
+#angleRight:hover {
+    background-color: #0000001A;
+}
+
+#angleLeft i {
+    font-size: 100px;
+    color: #000;
+    padding-left: 10px;
+}
+
+#angleRight i {
+    font-size: 90px;
+    color: #000;
+}
+
+.inner {
+    height: 532px;
+    position: relative;
+}
+
+.inner_up {
+    height: 66px;
+    padding: 20px 0 24px;
+}
+
+.inner1 {
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.inner1 p {
+    color: #000;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.inner2 {
+    margin-top: 5px;
+    height: 50px;
+}
+
+.inner2 ul {
+    display: flex;
+    justify-content: center;
+}
+
+.inner2 ul li a {
+    line-height: 50px;
+    color: #333;
+    margin: 0 24px;
+    font-size: 15px;
+}
+
+.inner_down {
+    margin-top: 50px;
+    width: 1200px;
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner_down ul {
+    width: 1440px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transition: 0.5s ease;
+}
+
+.inner_down li {
+    width: 240px;
+    height: 290px;
+    float: left;
+}
+
+.inner_down li .image {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #000;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+.inner_down li img {
+    width: 220px;
+    height: 220px;
+}
+
+.inner_down li .txt {
+    margin-left: 15px;
+}
+
+.inner_down li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.inner_down li p {
+    color: #999;
+    font-size: 14px;
+    text-indent: 2px;
+}
+
+
+/* 总导航点 */
+
+#pointer {
+    position: absolute;
+    z-index: 9999;
+    /* 确保在最上面，别人无法盖住 */
+    bottom: 65px;
+    left: 580px;
+}
+
+#pointer .navs {
+    float: left;
+    /* 设置元素向左浮动，同时转化为块元素 */
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: #0000001A;
+    background-clip: content-box;
+    /* 将背景颜色设置到内容区，边框和内边距不再有背景颜色 */
+    border: 2px solid transparent;
+}
+
+.active {
+    background-color: #0000004D !important;
+    border: 2px solid rgba(255, 255, 255, .3) !important;
+}
+
+
+/* main end */

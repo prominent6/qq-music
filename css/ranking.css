@@ -1,0 +1,58 @@
+.header_down {
+    width: 1200px;
+    height: 52px;
+}
+
+.header_down ul {
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header_down ul li {
+    line-height: 52px;
+    margin: 0 25px;
+}
+
+.header_down ul li a {
+    color: #000;
+    font-size: 15px;
+}
+
+
+/* ranking start */
+
+.ranking-outer {
+    height: 650px;
+    margin: 20px auto;
+}
+
+.ranking-outer .ranking-left {
+    width: 178px;
+    height: 600px;
+    border: 1px solid #ccc;
+}
+
+.ranking-outer .ranking-left li {
+    width: 178px;
+    height: 38px;
+    line-height: 38px;
+    transition: all .5s;
+    color: #ccc;
+    font-size: 15px;
+    padding: 10px 10px;
+}
+
+.ranking-outer .ranking-right img {
+    height: 100px;
+    width: 100px;
+}
+
+.ranking-outer .ranking-right {
+    height: 186px;
+    overflow: hidden;
+}
+
+
+/* ranking end */

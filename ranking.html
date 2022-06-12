@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/ranking.css">
+    <script src="./js/ranking.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="header w">
+        <div class="header_up">
+            <div class="header_inner">
+                <div class="logo fl">
+                    <h1>
+                        <a href="index.html" title="QQ音乐">QQ音乐</a>
+                    </h1>
+                </div>
+                <div class="function fr">
+                    <ul class="ipt_l fl">
+                        <li><a href="javascript:;" class="current">音乐馆</a></li>
+                        <li><a href="javascript:;">我的音乐</a></li>
+                        <li>
+                            <a href="javascript:;">客户端</a>
+                            <img src="./image/mark_1.png" class="rob">
+                        </li>
+                        <li><a href="javascript:;">开放平台</a></li>
+                        <li><a href="javascript:;" class="w66">VIP</a></li>
+                    </ul>
+                    <div class="ipt_outer fl">
+                        <input type="text" placeholder="搜索音乐、MV、歌单、用户" class="search">
+                        <i class="iconfont icon-sousuoxiao search_btn"></i>
+                    </div>
+                    <ul class="ipt_r fr">
+                        <li><a href="javascript:;" class="w66">登录</a></li>
+                        <li><a href="javascript:;" class="w87">开通VIP</a></li>
+                        <li><a href="javascript:;" class="w48">充值</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_down">
+            <ul>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">歌手</a></li>
+                <li><a href="javascript:;">新碟</a></li>
+                <li><a href="javascript:;">排行榜</a></li>
+                <li><a href="javascript:;">分类歌单</a></li>
+                <li><a href="javascript:;">电台</a></li>
+                <li><a href="javascript:;">MV</a></li>
+                <li><a href="javascript:;">数字专辑</a></li>
+                <li><a href="javascript:;">票务</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- ranking start -->
+    <div class="ranking-outer w">
+        <ul class="ranking-left fl">
+        </ul>
+        <div class="ranking-right fr">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>封面</th>
+                            <th>浏览量</th>
+                            <th>更新周期</th>
+                        </tr>
+                    </thead>
+                </table>
+                <table>
+                    <th>排名</th>
+                    <th>歌曲</th>
+                    <th>歌手</th>
+                </table>
+            </div>
+
+            <!-- <tbody>
+                    <tr>
+                        <td rowspan="3">
+                            <img src="">
+                        </td>
+                        <td rowspan="3">2</td>
+                        <td rowspan="3">3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody> -->
+        </div>
+    </div>
+    <!-- ranking end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="w">
+            <div class="footer_up">
+                <div class="footer_up_func">
+                    <div class="func1">
+                        <div class="dt">下载QQ音乐客户端</div>
+                        <ul class="dd">
+                            <li>
+                                <i class="iconfont icon-windows-fill"></i>
+                                <a>PC版</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-mac"></i>
+                                <a>MAC版</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-andriod"></i>
+                                <a>android版</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-iphone"></i>
+                                <a>iphone版</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="func1">
+                        <div class="dt">特色产品</div>
+                        <ul class="dd">
+                            <li>
+                                <i class="iconfont icon-Kge"></i>
+                                <a>全民K歌</a>
+                                <a>车载互联</a>
+
+                            </li>
+                            <li>
+                                <i class="iconfont icon-icon_yinxiao"></i>
+                                <a>银河音效</a>
+                                <a>QQ演出</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-16gl-Q"></i>
+                                <a>Qplay</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-15"></i>
+                                <a>Fan直播伴侣</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="func2">
+                        <div class="dt">合作链接</div>
+                        <ul class="dd">
+                            <li><a href="javascript:;">CJ&nbspENM</a></li>
+                            <li><a href="javascript:;">腾讯视频</a></li>
+                            <li><a href="javascript:;">手机QQ空间</a></li>
+                            <li><a href="javascript:;">最新版QQ</a></li>
+                            <li><a href="javascript:;">腾讯社交广告</a></li>
+                            <li><a href="javascript:;">电脑管家</a></li>
+                            <li><a href="javascript:;">QQ浏览器</a></li>
+                            <li><a href="javascript:;">腾讯微云</a></li>
+                            <li><a href="javascript:;">腾讯云</a></li>
+                            <li><a href="javascript:;">企鹅FM</a></li>
+                            <li><a href="javascript:;">智能电视网</a></li>
+                            <li><a href="javascript:;">当贝市场</a></li>
+                            <li><a href="javascript:;">酷我音乐</a></li>
+                            <li><a href="javascript:;">酷狗听书</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_up_title fl">
+                    <div class="title1">
+                        <p>开放平台</p>
+                        <ul>
+                            <li>QQ音乐开放平台</li>
+                            <li>腾讯音乐人</li>
+                            <li>音乐推</li>
+                        </ul>
+                    </div>
+                    <div class="title2">
+                        <p>TME集团官网</p>
+                        <p>腾讯音乐</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_down">
+                <ul>
+                    <li><a href="javascript:;">关于腾讯</a>|</li>
+                    <li><a href="javascript:;">About Tencent</a>|</li>
+                    <li><a href="javascript:;">服务条款</a>|</li>
+                    <li><a href="javascript:;">用户服务协议</a>|</li>
+                    <li><a href="javascript:;">隐私政策</a>|</li>
+                    <li><a href="javascript:;">权利声明</a>|</li>
+                    <li><a href="javascript:;">广告服务</a>|</li>
+                    <li><a href="javascript:;">腾讯招聘</a>|</li>
+                    <li><a href="javascript:;">客服中心</a>|</li>
+                    <li><a href="javascript:;">网站导航</a>|</li>
+                </ul>
+                <ul>
+                    <li>Copyright © 1998 - 2022 Tencent.</li>
+                    <li><a href="javascript:;">All Rights Reserved.</a></li>
+                </ul>
+                <ul>
+                    <li>腾讯公司</li>
+                    <li><a href="javascript:;">版权所有</a>|</li>
+                    <li><a href="javascript:;">营业执照</a>|</li>
+                    <li>网络文化经营许可证：</li>
+                    <li><a href="javascript:;">粤网文[2020]3396-195号</a>|
+                    </li>
+                    <li>客服电话:</li>
+                    <li><a href="javascript:;">4006016666</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+</body>
+
+</html>
